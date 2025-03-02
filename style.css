@@ -16,13 +16,12 @@
 
 body {
   font-family: Arial, sans-serif;
-  padding: 2rem;
   background-color: #f0f0f0;
 }
 
 .canvas {
   display: flex;
-  height: 100vh;
+  height: 100lvh;
   background-color: white;
   border: 1px solid #000;
   border-radius: 20px;
@@ -33,10 +32,10 @@ body {
 }
 
 .character {
-  position: relative;
+  position: absolute;
   width: 100px;
   height: 100px;
-  top: 40rem;
+  top: 530px;
   left: 800px;
 }
 
@@ -45,4 +44,18 @@ body {
   height: 100%;
   /* mirror image */
   transform: scaleX(-1);
+}
+
+.enemy {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  top: 480px;
+  left: 100px;
+  transform: scaleX(-1);
+}
+
+.enemy img {
+  width: 100%;
+  height: 100%;
 }
